@@ -1,0 +1,28 @@
+/*
+    Rotas / Recurso
+*/
+
+/**
+ * Métodos HTTP:
+ * Get: Buscar/listar
+ * post: Criar
+ * put: Alterar
+ * delete: deletar
+ */
+
+ /**
+  * Tipos de parametros:
+  * Query Parms: Parâmetros nomeados enviados na rota após "?" (Filtros, Paginação)
+  * Rote Parms: parâmetros utilizados para identificar recursos
+  * Request Body:  Corpo da req utilizado para criar ou alterar recursos
+  */
+
+  /**
+   * SQL: MySQL,SQLite,PostgreSQL,Oracle,MicrosoftSQLServer
+   * NoSQL: MongoDB, CouchDB, etc.
+   */
+
+   /**
+    * Driver: SELECT * FROM users
+    * Query Builder : table('users').select('*').where()
+    */
