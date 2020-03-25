@@ -3,7 +3,7 @@ const routes = express.Router()
 
 const OngController = require('./controllers/OngController')
 const IncidentController = require('./controllers/IncidentController')
-const ProfileController = require('./controllers/IncidentController')
+const ProfileController = require('./controllers/ProfileController')
 const SessionControlles = require('./controllers/SessionController')
 
 //Login
