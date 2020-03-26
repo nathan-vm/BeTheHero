@@ -9,6 +9,13 @@ import styles from './styles'
 
 
 export default function Incidents(){
+
+    const navigation = useNavigation()
+    
+    function navigateToDetail(){
+        navigation.navigate('Detail')
+    }
+
     return(
         <View style={styles.container}>
             <View style={styles.header}>
@@ -28,7 +35,7 @@ export default function Incidents(){
             <FlatList
                 style={styles.incidentList}
                 data={[1,2,3]}
-                keyExtractor={incident=>incident}
+                keyExtractor={incident=>incident.toString()}
                 showsVerticalScrollIndicator={false}
                 renderItem={()=>(
                     <View style={styles.incident}>
@@ -43,7 +50,7 @@ export default function Incidents(){
 
                         <TouchableOpacity 
                         style={styles.detailsButton}
-                        onPress={()=>{}}>
+                        onPress={navigateToDetail}>
                             <Text style={styles.detailsButtonText}>
                             Ver Mais detalhes
                             </Text>
